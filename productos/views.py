@@ -4,7 +4,7 @@ from .models import Producto, Categoria
 
 
 def index(request):
-    productos = Producto.objects.all().values()
+    productos = Producto.objects.all()
     return render(
         request,
         "index.html",
